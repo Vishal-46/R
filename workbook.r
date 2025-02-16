@@ -80,15 +80,12 @@ c = matrix(c(19,29,39),nrow = 1, ncol = 3, byrow = TRUE)
 j=rbind(b,c)
 print(j)
 
-
-
 #Inline function
 func = function(x)x^2+4*x+4
 func(1)
 print(func(1))
 fu9 = func(9)
 print(fu9)
-
 
 #Looping over objects
 l = matrix(1:9,3,3)
