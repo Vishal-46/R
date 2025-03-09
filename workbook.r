@@ -160,3 +160,16 @@ i = c("Jan", "Feb", "Mar", "Apr")
 barplot(u,names.arg = i, xlab="Month",ylab="revenue",col="blue",main="Revenue-bar plot",border="red",)
 
 #Week-02
+#Generalization
+o = matrix(c(1,2,3,0,0,1),ncol=2,byrow=F)
+r = matrix(c(1,2,5),ncol=1,byrow=F)
+library(MASS)
+l = ginv(o) %*% r
+print(l)
+
+
+y = matrix(c(1,0,2,9,3,1),ncol=3,byrow=F)
+ji = c(2,1)
+library(MASS)
+re = ginv(y) %*% ji
+print(re)
